@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="@drawable/tri_bag">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_margin="30dp"
+        android:hint="Enter Temperature"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:id="@+id/getVal"
+        android:inputType="number"/>
+
+    <TextView
+        android:id="@+id/showAns"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="0.0"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textSize="30sp" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Celsius to Fahrenheit"
+            android:textSize="20dp"
+            android:id="@+id/c2f"
+            android:textStyle="italic"/>
+        <RadioButton
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="Fahrenheit to Celsius"
+            android:id="@+id/f2c"
+            android:textStyle="italic"/>
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp">
+
+        <Button
+            android:id="@+id/ansBtn"
+            android:layout_width="157dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/black_border"
+            android:text="Convert"
+            android:textSize="30dp" />
+
+        <Button
+            android:id="@+id/againBtn"
+            android:layout_width="159dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/black_border"
+            android:text="Reset"
+            android:textSize="30dp" />
+    </LinearLayout>
+</LinearLayout>
